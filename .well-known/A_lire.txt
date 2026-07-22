@@ -1,0 +1,3 @@
+Dossier de gestion DNS (.well-know)
+
+- BlueSky : atproto-did (compte perso. ancien "club-replugged.bsky.social")

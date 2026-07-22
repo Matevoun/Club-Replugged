@@ -1,0 +1,162 @@
+{# ----------------------------------------------------------------------------
+	In this file, you can define the style parameters.
+	Please note that an extension  allows you to set these
+	parameters from the ACP without having to modify the file.
+	The extension also offers the option of changing the logo,
+	modifying the board width, predefining the colours and adding custom CSS.
+	https://github.com/cabot/damaioconfiguration
+---------------------------------------------------------------------------- #}
+
+{# Display color-picker
+	true = yes
+	false = no
+#}
+{% DEFINE COLOR_PICKER = true %}
+
+
+
+{# Display login modal box
+	true = yes
+	false = no
+#}
+{% DEFINE MODAL_LOGIN = true %}
+
+
+
+{# Display header full width
+	true = yes
+	false = no
+#}
+{% DEFINE H_FULL_WIDTH = true %}
+
+
+
+{# Display footer full width
+	true = yes
+	false = no
+#}
+{% DEFINE F_FULL_WIDTH = false %}
+
+
+
+{# Display button for show/hide passwords
+	true = yes
+	false = no
+#}
+{% DEFINE SHOWPASSWORD = true %}
+
+
+
+{# Sticky top navbar
+	true = yes
+	false = no
+#}
+{% DEFINE STICKYNAV = true %}
+
+
+
+{# ----------------------------------------------------------------------------
+	To configure the footer icons, see below.
+---------------------------------------------------------------------------- #}
+
+{# Display feed icon
+	true = yes
+	false = no
+#}
+{% DEFINE DAMAIO_FEED = true %}
+
+{#
+	Each social icon below can be assigned two parameters:
+
+	  - The first one is the URL of the social network.
+	    Leave it empty if you don't want to display the icon.
+
+	  - The second parameter is optional and allows you to modify the title attribute.
+	    (information displayed in a tooltip when hovering the icon)
+		Useful if you want to translate it into the language of your board.
+		Leave it empty to display the icon default name.
+
+	To display an icon, only the first parameter (URL) is required.
+
+	Some characters you may want to copy&paste:
+	’ « » “ ” …
+
+	Important: each parameter must be enclosed with single quotes (''),
+	even if it is left empty.
+#}
+
+{% DEFINE DAMAIO_BLUESKY = 'https://bsky.app/profile/club-inter.net' %}
+{% DEFINE DAMAIO_BLUESKY_NAME = 'club-inter.net' %}
+
+{% DEFINE DAMAIO_DEVIANTART = '' %}
+{% DEFINE DAMAIO_DEVIANTART_NAME = '' %}
+
+{% DEFINE DAMAIO_DISCORD = 'https://discord.gg/pQf77bbF6s' %}
+{% DEFINE DAMAIO_DISCORD_NAME = 'Club-Replugged' %}
+
+{% DEFINE DAMAIO_FACEBOOK = 'https://www.facebook.com/Club.Replugged' %}
+{% DEFINE DAMAIO_FACEBOOK_NAME = 'Club-Replugged' %}
+
+{% DEFINE DAMAIO_FLICKR = '' %}
+{% DEFINE DAMAIO_FLICKR_NAME = '' %}
+
+{% DEFINE DAMAIO_GITHUB = '' %}
+{% DEFINE DAMAIO_GITHUB_NAME = '' %}
+
+{% DEFINE DAMAIO_INSTAGRAM = 'https://www.instagram.com/club_replugged/' %}
+{% DEFINE DAMAIO_INSTAGRAM_NAME = 'club_replugged' %}
+
+{% DEFINE DAMAIO_LINKEDIN = 'https://www.linkedin.com/company/club-replugged' %}
+{% DEFINE DAMAIO_LINKEDIN_NAME = 'Club-Replugged' %}
+
+{% DEFINE DAMAIO_MASTODON = 'https://mastodon.social/@ClubReplugged' %}
+{% DEFINE DAMAIO_MASTODON_NAME = 'ClubReplugged' %}
+
+{% DEFINE DAMAIO_PAYPAL = '' %}
+{% DEFINE DAMAIO_PAYPAL_NAME = '' %}
+
+{% DEFINE DAMAIO_PINTEREST = '' %}
+{% DEFINE DAMAIO_PINTEREST_NAME = '' %}
+
+{% DEFINE DAMAIO_REDDIT = '' %}
+{% DEFINE DAMAIO_REDDIT_NAME = '' %}
+
+{% DEFINE DAMAIO_SKYPE = '' %}
+{% DEFINE DAMAIO_SKYPE_NAME = '' %}
+
+{% DEFINE DAMAIO_SNAPCHAT = '' %}
+{% DEFINE DAMAIO_SNAPCHAT_NAME = '' %}
+
+{% DEFINE DAMAIO_SOUNDCLOUD = '' %}
+{% DEFINE DAMAIO_SOUNDCLOUD_NAME = '' %}
+
+{% DEFINE DAMAIO_STEAM = '' %}
+{% DEFINE DAMAIO_STEAM_NAME = '' %}
+
+{% DEFINE DAMAIO_TELEGRAM = '' %}
+{% DEFINE DAMAIO_TELEGRAM_NAME = '' %}
+
+{% DEFINE DAMAIO_TIKTOK = '' %}
+{% DEFINE DAMAIO_TIKTOK_NAME = '' %}
+
+{% DEFINE DAMAIO_TUMBLR = '' %}
+{% DEFINE DAMAIO_TUMBLR_NAME = '' %}
+
+{% DEFINE DAMAIO_TWITTER = 'https://twitter.com/Club_Replugged' %}
+{% DEFINE DAMAIO_TWITTER_NAME = 'Club_Replugged' %}
+
+{% DEFINE DAMAIO_VKONTAKTE = '' %}
+{% DEFINE DAMAIO_VKONTAKTE_NAME = '' %}
+
+{% DEFINE DAMAIO_WHATSAPP = 'https://chat.whatsapp.com/DboMNeBL1BrAHjy120GsEv' %}
+{% DEFINE DAMAIO_WHATSAPP_NAME = 'Club-Replugged' %}
+
+{% DEFINE DAMAIO_YOUTUBE = '' %}
+{% DEFINE DAMAIO_YOUTUBE_NAME = '' %}
+
+
+
+{# ----------------------------------------------------------------------------
+	Don't change anything below this line unless you know what you're doing.
+---------------------------------------------------------------------------- #}
+{% EVENT damaio_config %}

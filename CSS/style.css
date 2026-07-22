@@ -1,0 +1,387 @@
+/* Variables */
+:root {
+	--couleur-fond0: #F2F2F2;
+	--couleur-fond1: #FFFFFF;
+	--couleur-fond2: #FFCC00;
+	--couleur-fond3: #132849;
+	--couleur-forum1: #FF6600;
+	--couleur-forum2: #CC5500;
+	--couleur-facebook1: #1877f2;
+	--couleur-facebook2: #1652b0;
+	--couleur-twitter1: #000000;
+	--couleur-twitter2: #14171A;
+	--couleur-instagram1: #E4405F;
+	--couleur-instagram2: #D83552;
+	--couleur-linkedin1: #0077b5;
+	--couleur-linkedin2: #005582;
+	--couleur-mastodon1: #3088D4;
+	--couleur-mastodon2: #1A5B96;
+	--couleur-bluesky1: #007BFF;
+	--couleur-bluesky2: #0056B3;
+	--couleur-texte1: #132849;
+	--couleur-texte2: #FFFFFF;
+	--couleur-texte3: #000000;
+	--taille-texteh1: 36px;
+	--taille-texteh2: 24px;
+	--taille-texteh22: 28px;
+	--taille-texte2: 12px;
+}
+
+/* Réinitialisation des styles du navigateur */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Définition de la police personnalisée */
+@font-face {
+	font-family: 'Danoise';
+	src: url('https://club-inter.net/TTF/DANOISEbold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Styles pour les liens */
+a:hover {
+	color: var(--couleur-texte1);
+}
+
+h2 {
+	font-size: var(--taille-texteh2);
+	margin-bottom: 5px;
+	color: var(--couleur-texte1);
+}
+
+h3 {
+	margin-bottom: 10px;
+	color: var(--couleur-texte1);
+}
+
+/* Styles pour le corps de la page */
+body {
+	font-family: 'Arial, Geneva', sans-serif;
+	background-color: var(--couleur-fond0);
+	color: var(--couleur-texte1);
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+/* Conteneur principal */
+.contenant {
+	background-color: var(--couleur-fond2);
+	max-width: 980px;
+	padding: 20px;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-top: 0px;
+}
+
+/* Styles pour l'en-tête */
+header {
+	background-color: var(--couleur-fond3);
+	border-radius: 5px;
+	color: var(--couleur-texte2);
+	text-align: center;
+	padding: 20px;
+}
+
+/* Styles pour le titre "Club-Replugged" */
+header h1 {
+	font-family: 'Danoise', sans-serif;
+	font-size: var(--taille-texteh1);
+	margin-bottom: 10px;
+}
+
+header img {
+	max-width: 100px;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.center-block {
+	display: flex;
+	justify-content: center;
+}
+
+/* Styles pour les sections de contenu */
+section {
+	background-color: var(--couleur-fond1);
+	padding: 20px;
+	margin: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bloc-haut {
+	position: relative;
+	padding-right: 120px; /* Réserve l'espace pour l'icône */
+}
+
+/* Styles pour le logo des blocs */
+.bloc-image {
+	max-width: 100px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+/* Styles pour la section des mentions légales */
+.mentions-legales {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+/* Styles pour chaque paragraphe des mentions légales */
+.mentions-legales p {
+	margin: 0;
+}
+
+.signature {
+	font-size: var(--taille-texte2);
+	color: #666;
+	margin-top: 10px;
+}
+
+/* Styles pour le formulaire de contact */
+form {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: var(--couleur-texte1);
+	white-space: nowrap; /* Empêche les sauts de ligne */
+}
+
+/* Cacher tous les labels sauf celui avec la classe visible-label */
+label:not(.visible-label) {
+	display: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #132849;
+	border-radius: 5px;
+}
+
+button {
+	background-color: var(--couleur-fond3);
+	color: var(--couleur-fond1);
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: var(--couleur-fond2);
+	color: var(--couleur-texte1);
+}
+
+/* Applique la même police que le reste du texte aux placeholders */
+::-webkit-input-placeholder { /* Pour les navigateurs Webkit (Chrome, Safari, etc.) */
+	font-family: 'Arial, Geneva', sans-serif;
+}
+
+:-moz-placeholder { /* Pour Firefox 18- */
+	font-family: 'Arial, Geneva', sans-serif;
+}
+
+::-moz-placeholder { /* Pour Firefox 19+ */
+	font-family: 'Arial, Geneva', sans-serif;
+}
+
+:-ms-input-placeholder { /* Pour Internet Explorer */
+	font-family: 'Arial, Geneva', sans-serif;
+}
+
+/* Styles pour la page de confirmation */
+.confirmation {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.confirmation h2 {
+	font-size: var(--taille-texteh22);
+	color: var(--couleur-texte1);
+}
+
+/* Style pour les boutons sociaux */
+.forum-button,
+.facebook-button,
+.twitter-button,
+.instagram-button,
+.linkedin-button,
+.mastodon-button,
+.bluesky-button,
+.discord-button,
+.whatsapp-button {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: var(--taille-texte2);
+	cursor: pointer;
+	margin: 10px 10px 0px 0px;
+	text-decoration: none;
+}
+
+/* Bouton Forum */
+.forum-button {
+	background-color: var(--couleur-forum1); /* Couleur rétro inspirée de l'époque Club-Internet */
+	color: var(--couleur-texte2);
+}
+.forum-button:hover {
+	background-color: var(--couleur-forum2);
+	color: var(--couleur-texte2);
+}
+
+/* Transition douce pour tous les boutons sociaux */
+.forum-button,
+.facebook-button,
+.twitter-button,
+.instagram-button,
+.linkedin-button,
+.mastodon-button,
+.bluesky-button,
+.discord-button,
+.whatsapp-button {
+	transition: all 0.3s ease;
+}
+
+/* Effet d'élévation au survol */
+.forum-button:hover,
+.facebook-button:hover,
+.twitter-button:hover,
+.instagram-button:hover,
+.linkedin-button:hover,
+.mastodon-button:hover,
+.bluesky-button:hover,
+.discord-button:hover,
+.whatsapp-button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le bouton Facebook */
+.facebook-button {
+	background-color: var(--couleur-facebook1);
+	color: var(--couleur-texte2);
+}
+.facebook-button:hover {
+	background-color: var(--couleur-facebook2);
+	color: var(--couleur-texte2);
+}
+
+/* Style pour le bouton Twitter */
+.twitter-button {
+	background-color: var(--couleur-twitter1);
+	color: var(--couleur-texte2);
+}
+.twitter-button:hover {
+	background-color: var(--couleur-twitter2);
+	color: var(--couleur-texte2);
+}
+
+/* Bouton Instagram */
+.instagram-button {
+	background-color: var(--couleur-instagram1);
+	color: var(--couleur-texte2);
+}
+.instagram-button:hover {
+	background-color: var(--couleur-instagram2);
+	color: var(--couleur-texte2);
+}
+
+/* Bouton LinkedIn */
+.linkedin-button {
+	background-color: var(--couleur-linkedin1);
+	color: var(--couleur-texte2);
+}
+.linkedin-button:hover {
+	background-color: var(--couleur-linkedin2);
+	color: var(--couleur-texte2);
+}
+
+/* Bouton Mastodon */
+.mastodon-button {
+	background-color: var(--couleur-mastodon1);
+	color: var(--couleur-texte2);
+}
+.mastodon-button:hover {
+	background-color: var(--couleur-mastodon2);
+	color: var(--couleur-texte2);
+}
+
+/* Bouton Bluesky */
+.bluesky-button {
+	background-color: var(--couleur-bluesky1);
+	color: var(--couleur-texte2);
+}
+.bluesky-button:hover {
+	background-color: var(--couleur-bluesky2);
+	color: var(--couleur-texte2);
+}
+
+/* Bouton Discord */
+.discord-button {
+	background-color: #7289da;
+	color: var(--couleur-texte2);
+}
+.discord-button:hover {
+	background-color: #5b6eae;
+	color: var(--couleur-texte2);
+}
+
+/* Bouton WhatsApp */
+.whatsapp-button {
+	background-color: #25D366;
+	color: var(--couleur-texte3);
+}
+.whatsapp-button:hover {
+	background-color: #128C7E;
+	color: var(--couleur-texte2);
+}
+
+footer p {
+	color: var(--couleur-texte2);
+	margin: 0;
+}
+
+footer a {
+	color: var(--couleur-texte2);
+	text-decoration: none;
+}
+
+/* Styles pour les smartphones (moins de 768px de large) */
+@media (max-width: 768px) {
+	/* Styles pour les sections de contenu */
+	section {
+		padding: 20px;
+		margin: 20px 0px;
+	}
+
+	.bloc-haut {
+		padding-right: 90px; /* Réduit un peu l'espace réservé sur mobile */
+	}
+
+	.bloc-image {
+		max-width: 80px; /* Icône un peu plus petite sur mobile */
+		top: 5px; /* Rapproche un peu du haut */
+		right: 5px; /* Rapproche un peu du bord */
+	}
+}

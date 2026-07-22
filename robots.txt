@@ -1,0 +1,4 @@
+# Regle commune
+User-agent: *
+
+Sitemap: https://club-inter.net/sitemap.xml
