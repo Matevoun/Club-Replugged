@@ -57,6 +57,7 @@ fieldset.polls {
 	border: none;
 	border-radius: 0;
 	padding: 0 5px;
+	margin: 0 auto;
 }
 
 .headerbar {
@@ -71,9 +72,9 @@ fieldset.polls {
 }
 
 .site_logo {
-	background-image: url("https://club-inter.net/picts/ci98-replugged.png");
+	background-image: url("./images/logo.png");
 	background-size: contain;
-	width: 60px;
+	width: 53px;
 	height: 57px;
 }
 
@@ -200,6 +201,10 @@ dd.lastpost > span > *:not(dfn) {
 
 a.subforum {
 	margin-left: 0.1em;
+}
+
+.content {
+	line-height: 1.5;
 }
 
 .postbody .content {
@@ -477,6 +482,10 @@ select {
 	content: "\f0e5";
 }
 
+.row-item[class*=_hot]:before {
+	content: "\f06d";
+}
+
 .row-item[class*="_locked"]::before {
 	content: "\f023";
 }
@@ -495,6 +504,7 @@ select {
 
 .agreement {
 	font-size: 14px;
+	line-height: 1.6;
 }
 
 .dropdown {
@@ -1085,6 +1095,24 @@ a.avatar-letter:active {
 
 fieldset.submit-buttons input.paypalbutton {
 	padding: 0 12px;
+}
+
+/* Profile on the left / Profil sur la gauche
+(https://www.phpbb-fr.com/customise/db/extension/profil_sur_la_gauche/) */
+@media (min-width: 701px) {
+	.online-text:has(~ dl .preonline) {
+		top: -2px;
+		right: auto;
+		left: 10px;
+	}
+
+	.preonline {
+		display: none;
+	}
+
+	.preonline ~ .avatar {
+		margin-top: 4px;
+	}
 }
 
 /* || Media queries
